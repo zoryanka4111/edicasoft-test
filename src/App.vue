@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--top BLOCK-->
+    <HomeContent/>
+
+    <!--features BLOCK-->
+    <Features/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeContent from './components/HomeContent.vue'
+import Features from './components/Features.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeContent,
+    Features
   }
 }
 </script>
 
 <style lang="scss">
+/*font Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+$font-family: 'Open Sans', sans-serif;
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: $font-family;
+  font-size: 16px;
 }
 </style>

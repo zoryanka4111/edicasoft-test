@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: ‘/edicasoft-test/’
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/edicasoft-test/'
+        : '/'
 }

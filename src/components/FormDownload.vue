@@ -88,6 +88,9 @@ export default {
   .form{
     max-width: 410px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 75px 55px;
     background: #1C1C1C;
     opacity: 0.9;
@@ -140,6 +143,9 @@ export default {
   @media (max-width: 1300px) {
     .form{
       margin-left: 240px;
+      left: auto;
+      top: auto;
+      transform: none;
     }
   }
   @media (max-width: 1025px) {
